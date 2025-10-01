@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShadowForge: Interactive Digital Portfolio </title>
+    <meta name="description" content="Professional dark-themed portfolio with smooth animations — built with HTML, CSS and JS." />
+    
+    <!-- Add favicon links -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand"><a href="#hero"><span>ShadowForge: Interactive Digital Portfolio</span></a></div>
+    <nav class="nav-links" aria-label="Main Navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#languages">Languages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="mobile-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <div class="intro reveal">
+          <h1 class="title">Sai Vamshi Nagula</h1>
+          <p class="subtitle">Future-Ready Engineer • Full-Stack & AI Projects • Tech Explorer</p>
+          <p>I build scalable applications and innovative projects in AI, Web Development, and Full-Stack systems. This portfolio showcases my projects, certifications, and technical skills.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://www.linkedin.com/in/saivamshi24" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/Sai240924" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2>Who I Am</h2>
+      <p>I’m Sai Vamshi Nagula — passionate about software development, AI, and full-stack projects. Skilled in Java and web technologies, I focus on building scalable applications and solving real-world problems.</p>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2>What I Work With</h2>
+      
+      <div class="skill-categories">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-list">
+            <div class="chip" title="C"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C logo" /></div>
+            <div class="chip" title="C++"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++ logo" /></div>
+            <div class="chip" title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python logo" /></div>
+            <div class="chip" title="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java logo" /></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Web Development</h3>
+          <div class="skill-list">
+            <div class="chip" title="HTML5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 logo" /></div>
+            <div class="chip" title="CSS3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3 logo" /></div>
+            <div class="chip" title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript logo" /></div>
+            <div class="chip" title="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React logo" /></div>
+            <div class="chip" title="Angular"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Angular logo" /></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <div class="skill-list">
+            <div class="chip" title="MongoDB"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB logo" /></div>
+            <div class="chip" title="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL logo" /></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Platforms</h3>
+          <div class="skill-list">
+            <div class="chip" title="Tableau"><img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau logo" /></div>
+            <div class="chip" title="Git"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git logo" /></div>
+            <div class="chip" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub logo" /></div>
+            <div class="chip" title="VS Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code logo" /></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>Hands-On Creations</h2>
+      
+      <div class="section-grid">
+        <div class="project-card">
+          <h3>AI-Powered Virtual Assistant (Jarvis AI)</h3>
+          <p>Python-based voice assistant integrating speech recognition, pyttsx3, and APIs (OpenWeatherMap, Google Translate).</p>
+          <div class="project-actions">
+            <a class="btn" href="https://github.com/Sai240924/Academic_Projects/tree/main/AI_VIRTUAL_ASSISSTANT" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Real-Time Object Detection (YOLOv10)</h3>
+          <p>Live webcam-based object detection system optimized for smooth CPU performance.</p>
+          <div class="project-actions">
+            <a class="btn" href="https://github.com/Sai240924/Real-Time_Object_Detection" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>SmartCMS (Complaint Management System)</h3>
+          <p>Full-stack application using Angular, Node.js, Express, and MongoDB with secure authentication and real-time tracking.</p>
+          <div class="project-actions">
+            <a class="btn" href="https://github.com/Sai240924/SmartCMS" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>TechFinder</h3>
+          <p>E-commerce-style web app built with React (TypeScript), Tailwind, and Node.js backend APIs.</p>
+          <div class="project-actions">
+            <a class="btn" href="https://github.com/Sai240924/TechFinder" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="certificates" class="reveal">
+      <h2>Milestones Achieved</h2>
+      <div class="section-grid" id="certificates-grid">
+        <div class="certificate-card">
+          <img src="source/Lin_MS.png" alt="Career Essentials in Generative AI Certificate" />
+        </div>
+        <div class="certificate-card">
+          <img src="source/CyberSecurity(infosys).png" alt="Cyber Security Overview Certificate" />
+        </div>
+        <div class="certificate-card">
+          <img src="source/WDF.png" alt="Web Development Fundamentals Certificate" />
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal">
+      <h2>Practical Experience</h2>
+      <div class="section-grid" id="experience-grid">
+        <div class="certificate-card">
+          <img src="source/DA(Q).png" alt="Quantium Job Simulation Certificate" />
+        </div>
+        <div class="certificate-card">
+          <img src="source/Cyber(D).png" alt="Deloitte Job Simulation Certificate" />
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="reveal">
+      <h2>Academic Journey</h2>
+      <p>B.Tech in Computer Science — Sreyas Institute of Engineering and Technology, Hyderabad (2022–2026) | GPA: 7.28</p>
+    </section>
+
+    <section id="languages" class="reveal">
+      <h2>Spoken Languages</h2>
+      <div class="language-list">
+        <span class="lang">English</span>
+        <span class="lang">Telugu</span>
+        <span class="lang">Hindi</span>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Let’s Connect</h2>
+      <div class="contact-buttons">
+        <a href="mailto:saivamshi.0024@gmail.com" class="contact-btn" title="Email me">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/saivamshi24" target="_blank" rel="noopener" class="contact-btn" title="Connect on LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/Sai240924" target="_blank" rel="noopener" class="contact-btn" title="View GitHub">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.61-3.37-1.36-3.37-1.36-.45-1.17-1.11-1.48-1.11-1.48-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05 .89 1.56 2.34 1.11 2.91.85.09-.65.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.38 9.38 0 0 1 2.5-.34c.85 0 1.71.11 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05 .55 1.42.2 2.47.1 2.73 .64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07 .36.32.68.94.68 1.89 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+     © Sai Vamshi Nagula 2025
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
