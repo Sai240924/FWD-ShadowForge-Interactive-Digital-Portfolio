@@ -78,4 +78,22 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('blur', () => el.style.outline = 'none');
   });
 
+  // Add IntersectionObserver to toggle 'mobile-active' class on .intro in mobile view
+  const intro = document.querySelector('.intro');
+  if (intro) {
+    const isMobile = window.innerWidth <= 520;
+    if (isMobile) {
+      const introObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            intro.classList.add('mobile-active');
+          } else {
+            intro.classList.remove('mobile-active');
+          }
+        });
+      }, { threshold: 0.5 });
+      introObserver.observe(intro);
+    }
+  }
+
 });
